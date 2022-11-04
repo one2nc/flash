@@ -202,7 +202,7 @@ __Maven / Gradle__:
 Inside __jvmArgs__ we have used the property `address=*:8000` which tells from where we should attach debugger. Here `*` is
 placed in place of __host__ that means we can attach to debugger from any host within the same network.
 
-Then follow steps in [Remote Debugging Using IntelliJIDEA](https://github.com/RamanaReddy0M/hot-reload-inside-docker/blob/master/README.md#remote-debugging-using-intellijidea) to attach a debugger.
+Then follow steps in [Remote Debugging Using IntelliJIDEA](https://github.com/one2nc/flash/blob/master/README.md#remote-debugging-using-intellijidea) to attach a debugger.
 
 ## Details About Docker-Compose File
 ```yaml
@@ -262,5 +262,5 @@ to take care of a few things:
 
 ### Reference
 
-Refer the [__spring-postgres__](https://github.com/RamanaReddy0M/hot-reload-inside-docker-examples/tree/master/spring-boot-postgres)
+Refer the [__spring-postgres__](https://github.com/one2n/hot-reload-inside-docker-examples/tree/master/spring-boot-postgres)
 sample project for complete source code.

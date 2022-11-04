@@ -1,7 +1,7 @@
-# hot-reload-inside-docker
+# flash
 
-If you're looking to run a SpringBoot or Micronaut application inside docker with hot reload then
-you can use this repo.
+Hot reload your Java Spring Boot and Micronaut applications inside docker with debugging support via
+IntelliJIdea.
 
 https://user-images.githubusercontent.com/90540245/199573628-164be40b-4eda-41d5-b743-1e6ca8ef3221.mp4
 
@@ -29,7 +29,7 @@ Most of the frameworks support this feature locally. To have same behaviour insi
 docker we have created `Dockerfile` and `docker-compose.yml` templates
 for the java related technologies like SpringBoot and Micronaut. Additionally, you can debug the
 application running inside docker through IntelliJIDEA. To know more about it
-refer [Remote Debugging Using IntellijIDEA. ](https://github.com/RamanaReddy0M/hot-reload-inside-docker/blob/master/README.md#remote-debugging-using-intellijidea)
+refer [Remote Debugging Using IntellijIDEA. ](https://github.com/one2nc/flash/blob/master/README.md#remote-debugging-using-intellijidea)
 
 ## Quick Start
 
@@ -106,8 +106,7 @@ technologies(SpringBoot / Micronaut) between the Maven and Gradle build tools.
 https://user-images.githubusercontent.com/90540245/199643735-1462e99f-61ba-4e6b-84f9-6ae60fb3b686.mp4
 
 > __Note:__ Check
-> out [Comparison between Framework, Feature and Build Tools for Hot-Reload and Remote-Debugging](https://github.com/RamanaReddy0M/hot-reload-inside-docker#comparison-between-framework-feature-and-build-tools-for-hot-reload-and-remote-debugging)
+>
+out [Comparison between Framework, Feature and Build Tools for Hot-Reload and Remote-Debugging](https://github.com/one2nc/flash#comparison-between-framework-feature-and-build-tools-for-hot-reload-and-remote-debugging)
 > section
 > if you are using different build tool or framework.
-
-[![Documentation](https://img.shields.io/static/v1?label=Documentation&message=v1.0&color=<COLOR>)](https://ramanareddy0m.github.io/hot-reload-inside-docker/docs/intro)
