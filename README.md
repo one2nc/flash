@@ -35,10 +35,10 @@ refer [Remote Debugging Using IntellijIDEA. ](https://github.com/one2nc/flash/bl
 
 __Navigation Table__
 
-| Framework      | Database | <img src="./resources/maven-icon.svg" alt="maven" width="100" height="60">                                  | <img src="./resources/gradle-icon.svg" alt="maven" width="100" height="45"> |
-|----------------|----------|-------------------------------------------------------------------------------------------------------------|-------|
-| __SpringBoot__ | postgres | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./spring-postgres)    |[<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./spring-postgres)|
-| __Micronaut__  | postgres | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./micronaut-postgres) | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./micronaut-postgres)|
+| Framework      | Database | Maven | Gradle |
+|----------------|----------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| __SpringBoot__ | postgres | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./spring-postgres) | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./spring-postgres) |
+| __Micronaut__  | postgres | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./micronaut-postgres) | [<img src="./resources/folder_type_docker.svg" alt="folder" width="80" height="40"/>](./micronaut-postgres) |
 
 __Step-1:__ Click
 on <img src="./resources/folder_type_docker.svg" alt="folder" width="40" height="30"/> icon
@@ -94,12 +94,12 @@ Since we are downloading all the dependencies image size would be larger(depends
 Table depicts the way to enable hot-reload / remote-debugging feature for the Java related
 technologies(SpringBoot / Micronaut) between the Maven and Gradle build tools.
 
-| Framework | Feature          | <img src="./resources/maven-icon.svg" alt="maven" width="100" height="60">                                                                                                    | <img src="./resources/gradle-icon.svg" alt="maven" width="100" height="45">                                                                                                                                             |
-|----------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SpringBoot | hot-reload       | __Step-1:__ Add `spring-boot-devtools` dependency to `pom.xml`. </br> __Step-2:__ Run `./mvnw spring-boot:run` inside working directory.                                      | __Step-1:__ Add `org.springframework.boot:spring-boot-devtools` dependency to `build.gradle`. </br> __step-2__: Run `./gradlew bootRun` inside working directory.                                                       |
+| Framework | Feature          | Maven | Gradle |
+|----------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SpringBoot | hot-reload       | __Step-1:__ Add `spring-boot-devtools` dependency to `pom.xml`. </br> __Step-2:__ Run `./mvnw spring-boot:run` inside working directory.                                    | __Step-1:__ Add `org.springframework.boot:spring-boot-devtools` dependency to `build.gradle`. </br> __step-2__: Run `./gradlew bootRun` inside working directory.                                                       |
 |          | remote-debugging | Just run the command `./mvnw spring-boot:run -Dspring-boot.run.jvmArguments="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"` inside working directory. | __Step-1:__ Add task </br>`bootRun { jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"] }`</br> to `build.gradle`</br></br> __Step-2__: Run `./gradlew bootRun` inside working directory. |
-|Micronaut| hot-reload       | Run `./mvnw mn:run -Dmn.watch=true` inside working directory                                                                                                                  | Run `./gradlew run -t` inside working directory, Here `-t` enables continious build.                                                                                                                                    |
-|          | remote-debugging | Just run the command `./mvnw mn:run -Dmn.debug -Dmn.debug.host=* -Dmn.debug.port=8000` inside working directory.                                                              | __Step-1:__ Add task </br>`run { jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"] }`</br> to `build.gradle`</br></br> __Step-2__: Run `./gradlew run -t` inside working directory.      
+|Micronaut| hot-reload       | Run `./mvnw mn:run -Dmn.watch=true` inside working directory                                                                                                                | Run `./gradlew run -t` inside working directory, Here `-t` enables continious build.                                                                                                                                    |
+|          | remote-debugging | Just run the command `./mvnw mn:run -Dmn.debug -Dmn.debug.host=* -Dmn.debug.port=8000` inside working directory.                                                            | __Step-1:__ Add task </br>`run { jvmArgs=["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"] }`</br> to `build.gradle`</br></br> __Step-2__: Run `./gradlew run -t` inside working directory.      
 
 ## Remote Debugging Using IntelliJIDEA
 
