@@ -64,9 +64,9 @@ created __Dockerfile__ and __docker-compose.yml__ files in your project.
 
 ### Step-3:
 
-Make appropriate changes in [docker-compose.yml](./docker-compose.yml) and [.env](./.env) like:
+Make appropriate changes in `docker-compose.yml` and `.env` like:
 
-[__docker-compose.yml__](docker-compose.yml)
+__docker-compose.yml:__
 
 ```yaml
 version: '3.8'
@@ -77,7 +77,7 @@ services:
   ....
 ```
 
-[__.env__](.env)
+__.env:__
 
 ```
 ...
