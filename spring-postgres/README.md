@@ -99,8 +99,7 @@ __.env:__
 DB_NAME=<your-db-name>
 ...
 ```
-
-****### Step-4:
+### Step-4:
 
 __Maven/Gradle:__
 
